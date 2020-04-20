@@ -237,31 +237,31 @@ reverse – она меняет порядок элементов на обра�
 <p>
 
 ```
-let arrNames = ["Вероника","Влад","Женя","Катя"]
+let names = ["Вероника","Влад","Женя","Катя"]
 ```
 ```
-function reverseArray(arr){
-  let arr2 = []
+function reverseArray(foo){
+  let foo = []
   for(let i = arr.length - 1; i >= 0 ; i-- ){
-    arr2.push(arr[i])
+    foo.push(arr[i])
   }
-  return arr2
+  return foo
 
 }
-reverseArray(arrNames)
+reverseArray(names)
 ```
 и
 ```
-function reverseArrayInPlace(arr){
+function reverseArrayInPlace(bar){
   for(let i = 0; i <= Math.floor((arr.length - 1)/2); i++){
-    let elem = arr[i]
-    arr[i] = arr[arr.length - 1 - i]
-    arr[arr.length - 1 - i] = elem
+    let elem = bar[i]
+    bar[i] = bar[bar.length - 1 - i]
+    bar[bar.length - 1 - i] = elem
   }
-  return arr
+  return bar
 }
  
-reverseArrayInPlace(arrNames)
+reverseArrayInPlace(names)
 ```
 
 </p>
